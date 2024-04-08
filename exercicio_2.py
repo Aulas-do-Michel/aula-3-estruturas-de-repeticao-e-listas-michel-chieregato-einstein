@@ -23,3 +23,10 @@ Os números ímpares são [1, 3, 5]
 lista = [*map(int, input("Digite a sua lista (separando os números por vírgula): ").split(","))]
 
 # Fazer a partir daqui...
+lista_filtrada = []
+
+for valor in lista:
+    if (valor % 2) == 1:
+        lista_filtrada.append(valor)
+
+print(f"Os números ímpares são {lista_filtrada}")
