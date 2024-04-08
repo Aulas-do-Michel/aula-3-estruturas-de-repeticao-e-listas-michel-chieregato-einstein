@@ -1,54 +1,42 @@
 """
-#### Exercício 2 - Conversor de moeda
+#### Exercício 4 - Lista de organismos
 
-Você é uma casa de câmbio, recebe dinheiro em reais e transforma na moeda da viagem do usuário.
+Você recebeu uma lista que contém, para cada organismos detectado numa amostra, uma outra lista contendo a 
+quantidade de leituras que esse organismo teve em cada identificador taxonômico.
 
-Você tem em caixa dólares, pesos argentinos e ienes.
+Obs: Deixei a lista direto no exercício para facilitar. Mas faça o código para descobrir, não coloque a resposta direto!
 
-Pergunte para o usuário para onde ele vai viajar:
+Por exemplo:
 
-Se ele falar "Estados Unidos", "Argentina" ou "Japão", faça o seguinte processo:
-    Pergunte quantos reais ele vai converter. Receba o valor em float.
-    Converta o valor para a moeda do país.
-    Responda com o valor da moeda e em seguida o tipo da moeda (USD, ARS, ou JPY).
+[[100, 200, 300], [1, 99, 10000], [1, 1, 1]].
 
-Se ele falar qualquer outra coisa, responda "Não temos essa moeda em caixa.".
+Eu quero que você identifique o organismo que teve a maior média de leituras entre todos os organismos da lista.
 
-Utilize as seguintes conversões:
-5 reais = 1 USD
-1 real = 180 ARS
-1 real = 30 JPY
+Ao identificar digite a posição em que esse organismo se encontra na lista.
 
-Obs:
-Nos testes, vou tentar ignorar caso haja apenas uma diferença no número de casas decimais nas respostas.
-Porém, se você quiser garantir que você imprima com exatamente 2 casas decimais você pode usar a seguinte sintaxe: f"{sua_variavel:.2f}".
+No exemplo acima, você imprimiria:
+
+"O organismo com maior média é o da posição 1 da lista."
+
+Porque o organismo da posição 0 tem média de (100 + 200 + 300) / 3 = 200, o organismo da posição 0
+tem média de (1 + 99 + 10000) / 3 = 3366,66 e o da posição 2 tem média de (1 + 1 + 1) / 3 = 1.
+
+Logo o da posição 1 é maior.
+
+------
 
 Exemplo:
-valor_em_dolares = 23.333333
-print(f"{valor_em_dolares:.2f} USD")
->>> 23.33 USD
-
-Mais informações sobre formatação de strings: https://realpython.com/python-f-strings/#interpolating-values-and-objects-in-f-strings
-
--------------------------------------------
-Exemplos:
-
-Qual país você vai viajar? Estados Unidos
-Quantos reais você quer converter? 100
+lista_de_organismos = [[100, 200, 300], [1, 99, 10000], [1, 1, 1]]
 
 Resposta:
-20.00 USD
+O organismo com maior média é o da posição 1 da lista.
 
--------------------------------------------
-Qual país você vai viajar? Argentina
-Quantos reais você quer converter? 100
+Dica: Utilize mais de um for para resolver o exercício, um para a lista de organismos e um para cada lista. Cuidado com a identação.
 
-Resposta:
-18000.00 ARS
-
--------------------------------------------
-Qual país você vai viajar? China
-
-Resposta:
-Não temos essa moeda em caixa.
+O cálculo de média já foi feito em sala e pode ser usado de exemplo.
 """
+
+# Lista
+lista_de_organismos = [[50, 50, 50], [125, 99, 12], [19, 91, 42], [40, 189, 0], [1, 0, 0], [100, 100, 70], [99, 12, 12]]
+
+# Fazer a partir daqui
