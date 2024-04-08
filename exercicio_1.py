@@ -1,19 +1,27 @@
 """
 #### Exercício 1
 
-Receba um número inteiro de um usuário. Se ele for par, imprima "Par". Se não, imprima "Ímpar".
+Receba um número e calcule o fatorial dele.
+
+Obs: O fatorial de um número é calculado pela seguinte fórmula "n! = n · (n-1) · (n-2) … 3 · 2 · 1". Ou seja, por exemplo:
+
+4! = 4 * 3 * 2 * 1 = 24.
 
 Exemplo:
 
 Digite um número:
-10
+4
 
-Par
+O fatorial de 4 é 24.
 --------
 Digite um número:
-1
+5
 
-Ímpar
+O fatorial de 5 é 120.
 
-Dica: Lembre do comando de resto da divisão inteira!
+Dica: Para ajudar nesse cálculo, lembre-se das estruturas de repetição. 
+
+Pode-se utilizar o comando "while" ou até o "for" para te ajudar nisso.
+
+Fonte: Curso em vídeo.
 """
